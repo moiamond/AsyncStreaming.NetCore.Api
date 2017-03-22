@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  asyncstreaming.netcore.api:
+    image: asyncstreaming.netcore.api
+    build:
+      context: ./AsyncStreaming.NetCore.Api
+      dockerfile: Dockerfile
