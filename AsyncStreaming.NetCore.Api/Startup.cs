@@ -37,7 +37,9 @@ namespace AsyncStreaming.NetCore.Api
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseMvc();
+            app
+				.UseStaticFiles()
+				.UseMvc();
         }
     }
 }
